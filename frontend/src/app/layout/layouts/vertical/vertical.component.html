@@ -1,0 +1,35 @@
+<div class="min-h-screen bg-gray-50 p-6">
+  <!-- DASHBOARDS Section -->
+  <div class="mb-8">
+    <div class="mb-6">
+      <h1 class="text-2xl font-bold text-gray-900 uppercase tracking-wide">DASHBOARDS</h1>
+      <p class="text-gray-600 text-sm mt-1">Unique dashboard designs</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div *ngFor="let dashboard of dashboards" 
+           class="bg-white rounded-lg border border-gray-200 p-6 cursor-pointer transition-all duration-200 hover:shadow-lg hover:border-blue-500 hover:transform hover:-translate-y-1"
+           (click)="navigateTo(dashboard.route)">
+        <h3 class="font-semibold text-gray-800 text-lg mb-2">{{ dashboard.name }}</h3>
+        <p class="text-gray-600 text-sm">{{ dashboard.description }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- APPLICATIONS Section -->
+  <div class="mb-8">
+    <div class="mb-6">
+      <h1 class="text-2xl font-bold text-gray-900 uppercase tracking-wide">APPLICATIONS</h1>
+      <p class="text-gray-600 text-sm mt-1">Custom mode application designs</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div *ngFor="let app of applications" 
+           class="bg-white rounded-lg border border-gray-200 p-6 cursor-pointer transition-all duration-200 hover:shadow-lg hover:border-blue-500 hover:transform hover:-translate-y-1"
+           (click)="navigateTo(app.route)">
+        <h3 class="font-semibold text-gray-800 text-lg mb-2">{{ app.name }}</h3>
+        <p class="text-gray-600 text-sm">{{ app.description }}</p>
+      </div>
+    </div>
+  </div>
+</div>
