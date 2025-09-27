@@ -32,4 +32,7 @@ export class VerticalLayoutComponent {
         console.log('Navigating to:', route);
         this._router.navigate([route]);
     }
+    ngOnInit(): void {
+         console.log('vert layout load')
+    }
 }

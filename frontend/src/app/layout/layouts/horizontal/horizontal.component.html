@@ -1,0 +1,59 @@
+<header class="bg-white shadow-sm border-b border-gray-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      
+      <!-- Логотип или название системы -->
+      <div class="flex items-center">
+        <h1 class="text-xl font-semibold text-gray-900">Система дистанционного обучения</h1>
+      </div>
+
+      <!-- Информация о студенте -->
+      <div class="flex items-center space-x-4">
+        
+        <!-- Информация о студенте -->
+        <div class="hidden md:flex flex-col items-end">
+          <span class="text-sm font-medium text-gray-900">{{ studentName }}</span>
+          <span class="text-xs text-gray-500">{{ studentGroup }}</span>
+        </div>
+
+        <!-- Аватар и меню -->
+        <div class="relative">
+          <button 
+            (click)="toggleUserMenu()"
+            class="flex items-center space-x-2 bg-gray-100 hover:bg-gray-200 rounded-full p-1 transition-colors duration-200"
+          >
+            <!-- Аватар -->
+            <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+              @if (avatarUrl) {
+                <img [src]="avatarUrl" alt="Аватар" class="w-8 h-8 rounded-full">
+              } @else {
+                <span class="text-white font-medium text-sm">
+                  {{ studentName.charAt(0) }}
+                </span>
+              }
+            </div>
+            
+            <!-- Иконка стрелки -->
+            <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+
+          <!-- Выпадающее меню -->
+          @if (isUserMenuOpen) {
+            <div class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-200">
+              @for (item of userMenuItems; track item.action) {
+                <button 
+                  (click)="onMenuItemClick(item.action)"
+                  class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+                >
+                  {{ item.label }}
+                </button>
+              }
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
