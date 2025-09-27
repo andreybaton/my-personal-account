@@ -8,15 +8,19 @@
                 <p class="text-gray-600 text-sm mt-1">Unique dashboard designs</p>
             </div>
 
-            <ul class="space-y-3">
+            <div>
                 @for(dashboard of dashboards; track $index) {
-                    <li class="bg-gray-50 rounded-lg border border-gray-200 p-4 cursor-pointer transition-all duration-200 hover:shadow-md hover:border-blue-500 hover:bg-blue-50"
+                    <div class="bg-gray-50 rounded-lg border border-gray-200 p-4 cursor-pointer transition-all duration-200 hover:shadow-md hover:border-blue-500 hover:bg-blue-50"
                         (click)="navigateTo(dashboard.route)">
                         <h3 class="font-semibold text-gray-800 text-base mb-1">{{ dashboard.name }}</h3>
                         <p class="text-gray-600 text-xs">{{ dashboard.description }}</p>
-                    </li>
+                </div>
                 }
-            </ul>
+            </div>
         </div>    
     </div>
+      <!-- Центральная часть (контент) -->
+  <div class="flex-1 p-6 overflow-y-auto">
+    <router-outlet></router-outlet>
+  </div>
 </div>

@@ -1,0 +1,50 @@
+<!-- logo.component.html -->
+<div class="flex items-center justify-center logo-wrap">
+      <svg viewBox="0 0 200 200" class="w-full h-full">
+        <!-- центральная красная точка -->
+        <circle cx="100" cy="100" r="9" fill="#E63946" />
+
+        <!-- Внутренняя дуга (сектор) -->
+        <g class="arc rotate-medium">
+          <!-- круг, но видим только часть через stroke-dasharray -->
+          <circle cx="100" cy="100" r="28" stroke="#0b4c86" stroke-width="3"
+                  fill="none" stroke-linecap="round" stroke-dasharray="110 70"
+                  transform="rotate(-20 100 100)"/>
+          <!-- точка на этой дуге (смещена по Y = 100 - r) и повернута так же -->
+          <circle cx="100" cy="72" r="5" fill="#0b4c86" transform="rotate(-20 100 100)"/>
+        </g>
+
+        <!-- Средняя дуга (короткий сектор на противоположной стороне) -->
+        <g class="arc">
+          <circle cx="100" cy="100" r="44" stroke="#0b4c86" stroke-width="3"
+                  fill="none" stroke-linecap="round" stroke-dasharray="95 180"
+                  transform="rotate(30 100 100)"/>
+          <circle cx="144" cy="100" r="6" fill="#0b4c86" transform="rotate(30 100 100)"/>
+        </g>
+
+        <!-- Большая дуга (более длинный сектор) -->
+        <g class="arc rotate-slow">
+          <circle cx="100" cy="100" r="60" stroke="#0b4c86" stroke-width="3"
+                  fill="none" stroke-linecap="round" stroke-dasharray="170 200"
+                  transform="rotate(10 100 100)"/>
+          <circle cx="160" cy="100" r="6" fill="#0b4c86" transform="rotate(10 100 100)"/>
+        </g>
+
+        <!-- Ещё одна внешняя дуга, смещённая -->
+        <g class="arc">
+          <circle cx="100" cy="100" r="76" stroke="#0b4c86" stroke-width="3"
+                  fill="none" stroke-linecap="round" stroke-dasharray="210 220"
+                  transform="rotate(-40 100 100)"/>
+          <circle cx="24" cy="100" r="6" fill="#0b4c86" transform="rotate(-40 100 100)"/>
+        </g>
+
+        <!-- Маленькие отдельные сегменты и точки слева/справа -->
+        <g class="arc">
+          <!-- короткая дуга-«штрих» (где на фото видны маленькие дуги рядом) -->
+          <path d="M28 78 A18 18 0 0 1 44 60" stroke="#0b4c86" stroke-width="3"
+                fill="none" stroke-linecap="round"/>
+          <circle cx="22" cy="92" r="4" fill="#0b4c86"/>
+        </g>
+
+      </svg>
+    </div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router, RouterOutlet } from '@angular/router';
 
 interface MenuItem {
     name: string;
@@ -9,21 +10,26 @@ interface MenuItem {
 @Component({
     selector: 'vertical-layout',
     templateUrl: './vertical.component.html',
-
+    imports:[RouterOutlet],
 })
 export class VerticalLayoutComponent {
+
+    constructor(
+        private _router: Router,
+    )
+    {}
+
     dashboards: MenuItem[] = [
-        { name: 'Abiturientu', route: '/abiturientu' },
-        { name: 'Profile', route: '/profile' },
-        { name: 'Sistema soprovod', route: '/system' },
-        { name: 'Moodle', route: '/moodle' },
-        { name: 'Inf resources', route: '/inf' },
-        { name: 'Pers dock', route: '/pers' }
+        { name: 'Абитуриенту', route: '/abiturientu' },
+        { name: 'Профиль', route: '/profile' },
+        { name: 'Система сопрождения обучения', route: '/distancelearning' },
+        { name: 'Персональные документы', route: '/persondocuments' },
+        { name: 'logo', route: '/logo' }
     ];
 
     navigateTo(route: string): void {
         // Навигация по роуту
         console.log('Navigating to:', route);
-        // this.router.navigate([route]);
+        this._router.navigate([route]);
     }
 }
