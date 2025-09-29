@@ -10,7 +10,7 @@ export const routes: Routes =[
         },
         children: [
             {path: 'distancelearning', loadChildren: () => import('./modules/student/distlearning/distlearning.routes'),},
-            
+            {path: 'profile', loadChildren: ()=>import('./modules/student/profile/profile.routes')}
         ]
     },
 ];

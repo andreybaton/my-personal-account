@@ -1,0 +1,58 @@
+<div class=" bg-white rounded-lg shadow-lg overflow-hidden mt-4">
+    <!-- Заголовок расписания -->
+    <div class="bg-blue-600 text-white p-4">
+        <h2 class="text-xl font-bold">Расписание занятий</h2>
+        <p class="text-blue-100 text-sm">На несколько недель</p>
+    </div>
+
+    <!-- Сетка расписания -->
+    <div class="overflow-x-auto">
+        <div class="min-w-max">
+            
+            <!-- Шапка таблицы - дни недели -->
+            <div class="grid grid-cols-8 border-b border-gray-200">
+                <!-- Пустая ячейка в углу -->
+                <div class="bg-gray-100 p-3 border-r border-gray-200 min-w-[100px] font-semibold">
+                    Неделя / День
+                </div>
+                
+                <!-- Дни недели -->
+                @for (day of daysOfWeek; track day.id) {
+                <div class="bg-gray-100 p-3 text-center font-semibold border-r border-gray-200 last:border-r-0 min-w-[150px]">
+                    <div class="text-gray-900">{{ day.name }}</div>
+                    <div class="text-gray-600 text-sm">{{ day.short }}</div>
+                </div>
+                }
+            </div>
+
+            <!-- Строки для каждой недели -->
+            @for (week of weeks; track week.id) {
+            <div class="grid grid-cols-8 border-b border-gray-200 last:border-b-0">
+                
+                <!-- Номер недели -->
+                <div class="bg-gray-50 p-3 border-r border-gray-200 text-center font-medium">
+                    Неделя {{ week.id }}
+                </div>
+
+                <!-- Ячейки для каждого дня недели -->
+                @for (day of daysOfWeek; track day.id) {
+                <div class="p-2 border-r border-gray-200 last:border-r-0 min-h-[120px] min-w-[150px] bg-gray-50/30">
+                    
+                    <!-- Все занятия на этот день и неделю -->
+                    @for (lesson of getLessonsForDayAndWeek(day.id, week.id); track lesson.id) {
+                        <app-lesson [lesson]="lesson"></app-lesson>
+                    }
+                    
+                    <!-- Если нет занятий -->
+                    @if (getLessonsForDayAndWeek(day.id, week.id).length === 0) {
+                        <div class="flex items-center justify-center h-full text-gray-400 text-sm">
+                            Нет занятий
+                        </div>
+                    }
+                </div>
+                }
+            </div>
+            }
+        </div>
+    </div>
+</div>
