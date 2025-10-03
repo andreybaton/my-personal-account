@@ -1,1 +1,105 @@
-<p>profile bitches</p>
+<div class="bg-white rounded-lg shadow-lg overflow-hidden mt-4">
+
+<!-- Заголовок -->
+<div class="bg-blue-600 text-white p-4">
+    <h2 class="text-xl font-bold">Профиль студента</h2>
+    <p class="text-blue-100 text-sm">Личная информация и успеваемость</p>
+</div>
+
+<!-- Основной контент -->
+<div class="overflow-x-auto">
+    <div class="min-w-max p-6">
+    
+    <!-- Верхняя часть с основной информацией -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        
+        <!-- Аватар и основная информация -->
+        <div class="col-span-1">
+        <div class="flex flex-col items-center text-center">
+            <!-- Аватар -->
+            <div class="w-32 h-32 bg-blue-100 rounded-full flex items-center justify-center mb-4 border-4 border-blue-200">
+            @if (student.avatar) {
+                <img [src]="student.avatar" alt="Аватар" class="w-32 h-32 rounded-full">
+            } @else {
+                <span class="text-4xl text-blue-600 font-bold">
+                {{ student.initials }}
+                </span>
+            }
+            </div>
+            
+            <h3 class="text-xl font-bold text-gray-900 mb-2">{{ student.fullName }}</h3>
+            <div class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
+            {{ student.group }}
+            </div>
+        </div>
+        </div>
+
+        <!-- Статистика успеваемости -->
+        <div class="col-span-1 md:col-span-2">
+        <h4 class="text-lg font-semibold text-gray-900 mb-4">Статистика успеваемости</h4>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-gray-50 p-4 rounded-lg text-center">
+            <div class="text-2xl font-bold text-blue-600 mb-1">{{ performanceStats.averageScore }}</div>
+            <div class="text-sm text-gray-600">Средний балл</div>
+            </div>
+            <div class="bg-gray-50 p-4 rounded-lg text-center">
+            <div class="text-2xl font-bold text-orange-600 mb-1">{{ performanceStats.attendance }}%</div>
+            <div class="text-sm text-gray-600">Посещаемость</div>
+            </div>
+            <div class="bg-gray-50 p-4 rounded-lg text-center">
+            <div class="text-2xl font-bold text-green-600 mb-1">{{ performanceStats.completedCourses }}</div>
+            <div class="text-sm text-gray-600">Долги</div>
+            </div>
+            <div class="bg-gray-50 p-4 rounded-lg text-center">
+            <div class="text-2xl font-bold text-purple-600 mb-1">{{ performanceStats.currentCourses }}</div>
+            <div class="text-sm text-gray-600">Текущих курсов</div>
+            </div>
+        </div>
+        <p class="mb-2 mt-2">⭐ <strong>Учебные достижения:</strong> Повышенная стипендия</p>
+        </div>
+    </div>
+
+    <!-- Детальная информация -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+        
+        <!-- Личная информация -->
+        <div class="bg-gray-50 rounded-lg p-6">
+            <h4 class="text-lg font-semibold text-gray-900 mb-4">Личная информация</h4>
+            <div class="space-y-3">
+                @for (info of studentInfo; track info.label) {
+                    <div class="flex items-center justify-between py-2 border-b border-gray-200 last:border-b-0">
+                        <div class="flex items-center">
+                            <span class="text-lg mr-3">{{ info.icon }}</span>
+                            <span class="text-sm font-medium text-gray-700">{{ info.label }}:</span>
+                        </div>
+                        @if(!edit){
+                            <span class="text-sm text-gray-900">{{ info.value }}</span>
+                        }
+                        @else{
+                            <input class="text-right text-sm text-gray-900" [placeholder]="info.value">
+                        }
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!-- Быстрые действия -->
+        <div class="bg-gray-50 rounded-lg p-6">
+        <h4 class="text-lg font-semibold text-gray-900 mb-4">Быстрые действия</h4>
+        <div class="grid grid-cols-1 gap-3">
+            @for (action of quickActions; track action.label) {
+            <button 
+                (click)="onActionClick(action.action)"
+                class="flex items-center p-3 bg-white rounded-lg border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-all duration-200"
+            >
+                <span class="text-xl mr-3">{{ action.icon }}</span>
+                <span class="text-sm font-medium text-gray-700">{{ action.label }}</span>
+            </button>
+            }
+        </div>
+        </div>
+    </div>
+
+    </div>
+</div>
+</div>
