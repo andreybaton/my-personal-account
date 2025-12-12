@@ -1,2 +1,2 @@
-<div>pending button check</div>
-<button (click)="childClick()">{{status}}</button>
+<div >pending button {{butIndex}} check</div>
+<button class="pending-button" (click)="childClick(butIndex)">{{status$ |async}}</button>

@@ -1,7 +1,7 @@
-import { ChangeDetectionStrategy, Component } from "@angular/core";
+import { ChangeDetectionStrategy, Component, EventEmitter } from "@angular/core";
 import { PendingButtonComponent } from "./pending-button/pending-button.component";
 import { delay, Observable, of } from "rxjs";
-import { AsyncPipe } from "@angular/common";
+import { AsyncPipe, NgForOf } from "@angular/common";
 import { SandboxService } from "./sandbox.service";
 
 @Component({
@@ -9,19 +9,22 @@ import { SandboxService } from "./sandbox.service";
     templateUrl:'./sandbox.component.html',
     standalone: true,
     changeDetection: ChangeDetectionStrategy.Default,
-    imports:[PendingButtonComponent, AsyncPipe],
+    imports: [PendingButtonComponent, AsyncPipe, NgForOf],
     providers:[SandboxService]
 })
 export class SandboxComponent {
+    status = new EventEmitter<{id: number, status: string}>;
+    //id: number = 1;
     constructor(private sandServ: SandboxService){
 
     }
 
-    pend(){
-        console.log('pend')
+    pend(ind: number){
+        console.log('pend', ind)
         this.sandServ.getResponse().subscribe({
             next: (response)=>{
                 console.log('res', response); 
+                this.status.emit({id: ind, status: 'success'});
             }
         })
     }

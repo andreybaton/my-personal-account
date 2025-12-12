@@ -1,4 +1,7 @@
-<pending-button
-
-(pendRequest)="pend()"
-></pending-button>
+<div *ngFor="let but of [1,2,3,4]; let i=index">
+    <pending-button
+    [butIndex]="i"
+    [statusUpdate]="status"
+    (pendRequest)="pend(i)"
+    ></pending-button>
+</div>
