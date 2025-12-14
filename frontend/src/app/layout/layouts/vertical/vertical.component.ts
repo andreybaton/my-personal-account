@@ -24,8 +24,8 @@ export class VerticalLayoutComponent {
         { name: 'Профиль', route: '/profile' },
         { name: 'Система сопрождения обучения', route: '/distancelearning' },
         { name: 'Персональные документы', route: '/persondocuments' },
-        { name: 'logo', route: '/logo' },
-        { name: 'sandbox', route:'/sandbox'}
+        { name: 'sandboxForm', route: '/sandboxForm'},
+        { name: 'sandboxButton', route:'/sandboxButton'}
     ];
 
     navigateTo(route: string): void {
