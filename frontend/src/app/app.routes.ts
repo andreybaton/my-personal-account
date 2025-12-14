@@ -11,7 +11,9 @@ export const routes: Routes =[
         children: [
             {path: 'distancelearning', loadChildren: () => import('./modules/student/distlearning/distlearning.routes'),},
             {path: 'profile', loadChildren: ()=>import('./modules/student/profile/profile.routes'),},
-            {path: 'sandbox', loadChildren: ()=>import('./modules/student/sandbox/sandbox.routes')}
+            {path: 'sandbox', loadChildren: ()=>import('./modules/student/sandbox/sandbox.routes')},
+            {path: 'profile', loadChildren: ()=>import('./modules/student/profile/profile.routes')},
+            {path: 'sandbox', loadChildren: ()=>import('./modules/sandbox/sandbox.routes')}
         ]
     },
 ];
