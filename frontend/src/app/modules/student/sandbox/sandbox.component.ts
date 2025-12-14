@@ -8,12 +8,12 @@ import { SandboxService } from "./sandbox.service";
     selector: 'sandbox-component',
     templateUrl:'./sandbox.component.html',
     standalone: true,
-    changeDetection: ChangeDetectionStrategy.Default,
+    changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [PendingButtonComponent, AsyncPipe, NgForOf],
     providers:[SandboxService]
 })
 export class SandboxComponent {
-    status = new EventEmitter<{id: number, status: string}>;
+    status = new EventEmitter<{id: number, status: string}>();
     //id: number = 1;
     constructor(private sandServ: SandboxService){
 

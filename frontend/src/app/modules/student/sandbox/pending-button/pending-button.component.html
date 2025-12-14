@@ -1,2 +1,8 @@
 <div >pending button {{butIndex}} check</div>
-<button class="pending-button" (click)="childClick(butIndex)">{{status$ |async}}</button>
+<!-- <button class="pending-button" (click)="childClick(butIndex)">{{status$ |async}}</button> -->
+ <button nz-button nzType="primary" nzSize="small"
+    (click)="childClick(butIndex)">
+    <span
+    nz-icon [nzType]="(status$|async)!"
+    ></span>
+ </button>

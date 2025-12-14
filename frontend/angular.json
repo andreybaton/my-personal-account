@@ -32,7 +32,9 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/style.scss",
+              "node_modules/ng-zorro-antd/ng-zorro-antd.min.css"
+
             ]
           },
           "configurations": {
