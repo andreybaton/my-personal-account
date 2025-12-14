@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\backend\\configs",
+    "\\backend\\docs",
+    "\\backend\\internal",
+    "\\backend\\internal\\config",
+    "\\dotnet-backend",
+    "\\dotnet-backend\\Application",
+    "\\dotnet-backend\\Domain",
+    "\\dotnet-backend\\Infrastructure",
+    "\\dotnet-backend\\WebAPI"
+  ],
+  "SelectedNode": "\\dotnet-backend\\dotNetCleanArchitectureBack.sln",
+  "PreviewInSolutionExplorer": false
+}
