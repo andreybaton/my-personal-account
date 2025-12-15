@@ -1,7 +1,8 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Lesson } from './lesson.types';
+//import { Lesson } from './lesson.types';
 import { Router } from '@angular/router';
+import { Lesson } from '../../../../shared/lesson.interface';
 @Component({
     selector: 'app-lesson',
     standalone: true,
@@ -23,15 +24,15 @@ export class LessonComponent {
     {
     }
     get colorClass(): string {
-        console.log('Lesson type:', this.lesson.type); // Для отладки
+        console.log('Lesson type:', this.lesson.lessonType); // Для отладки
         
         const colors = {
-            lecture: 'bg-blue-100 border-blue-200 hover:bg-blue-200',
-            practice: 'bg-green-100 border-green-200 hover:bg-green-200',
-            lab: 'bg-purple-100 border-purple-200 hover:bg-purple-200'
+            lecture: 'bg-blue-200 hover:bg-blue-300',
+            practice: 'bg-green-200 hover:bg-green-300',
+            lab: 'bg-orange-200 hover:bg-orange-300'
         };
         
-        const color = colors[this.lesson.type as keyof typeof colors] || 'bg-gray-100 border-gray-200';
+        const color = colors[this.lesson.lessonType as keyof typeof colors] || 'bg-gray-100 border-gray-200';
         console.log('Selected color:', color); // Для отладки
         
         return color;

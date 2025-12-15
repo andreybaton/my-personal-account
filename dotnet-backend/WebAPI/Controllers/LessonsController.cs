@@ -2,6 +2,7 @@
 using Infrastructure.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using WebAPI.DTO;
 
 namespace WebAPI.Controllers
 {
@@ -18,14 +19,27 @@ namespace WebAPI.Controllers
 
         // GET: api/lessons
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Lesson>>> GetLessons()
+        public async Task<ActionResult<IEnumerable<LessonDto>>> GetLessons()
         {
-            return await _context.Lessons.ToListAsync();
+            var lessons = await _context.Lessons.ToListAsync();
+
+            // Маппинг из Entity в DTO
+            return lessons.Select(lesson => new LessonDto
+            {
+                Id = lesson.Id,
+                Teacher = lesson.Teacher,
+                Classroom = lesson.Classroom,
+                Discipline = lesson.Discipline,
+                LessonDate = lesson.LessonDate.ToString("yyyy-MM-dd"),
+                StartTime = lesson.StartTime.ToString("HH:mm:ss"),
+                EndTime = lesson.EndTime.ToString("HH:mm:ss"),
+                LessonType = lesson.LessonType
+            }).ToList();
         }
 
         // GET: api/lessons/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Lesson>> GetLesson(int id)
+        public async Task<ActionResult<LessonDto>> GetLesson(int id)
         {
             var lesson = await _context.Lessons.FindAsync(id);
 
@@ -34,13 +48,34 @@ namespace WebAPI.Controllers
                 return NotFound();
             }
 
-            return lesson;
+            return new LessonDto
+            {
+                Id = lesson.Id,
+                Teacher = lesson.Teacher,
+                Classroom = lesson.Classroom,
+                Discipline = lesson.Discipline,
+                LessonDate = lesson.LessonDate.ToString("yyyy-MM-dd"),
+                StartTime = lesson.StartTime.ToString("HH:mm:ss"),
+                EndTime = lesson.EndTime.ToString("HH:mm:ss"),
+                LessonType = lesson.LessonType
+            };
         }
 
         // POST: api/lessons
         [HttpPost]
-        public async Task<ActionResult<Lesson>> PostLesson(Lesson lesson)
+        public async Task<ActionResult<Lesson>> PostLesson(LessonDto lessonDto)
         {
+            var lesson = new Lesson
+            {
+                Teacher = lessonDto.Teacher,
+                Classroom = lessonDto.Classroom,
+                Discipline = lessonDto.Discipline,
+                LessonDate = DateOnly.Parse(lessonDto.LessonDate),
+                StartTime = TimeOnly.Parse(lessonDto.StartTime),
+                EndTime = TimeOnly.Parse(lessonDto.EndTime),
+                LessonType = lessonDto.LessonType
+            };
+
             _context.Lessons.Add(lesson);
             await _context.SaveChangesAsync();
 

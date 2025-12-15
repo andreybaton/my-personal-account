@@ -12,9 +12,9 @@ namespace Domain.Entities
         public string Teacher { get; set; } = string.Empty;
         public string Classroom { get; set; } = string.Empty;
         public string Discipline { get; set; } = string.Empty;
-        public DateTime LessonDate { get; set; } // DateTime вместо DateOnly
-        public TimeSpan StartTime { get; set; }  // TimeSpan вместо TimeOnly
-        public TimeSpan EndTime { get; set; }    // TimeSpan вместо TimeOnly
+        public DateOnly LessonDate { get; set; } // DateTime вместо DateOnly
+        public TimeOnly StartTime { get; set; }  // TimeSpan вместо TimeOnly
+        public TimeOnly EndTime { get; set; }    // TimeSpan вместо TimeOnly
         public string LessonType { get; set; } = string.Empty;
     }
 }

@@ -3,7 +3,9 @@ import { DistlearningService } from './distlearning.service';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { LessonComponent } from './lesson/lesson.component';
-import { Lesson } from './lesson/lesson.types';
+//import { Lesson } from './lesson/lesson.types';
+import { map } from 'rxjs';
+import { Lesson } from '../../../shared/lesson.interface';
 
 @Component({
   selector: 'app-distlearning',
@@ -14,37 +16,22 @@ import { Lesson } from './lesson/lesson.types';
   
 })
 export class DistlearningComponent implements OnInit {
-    lessons: Lesson[] = [
-    {
-      id: 1,
-      title: 'Математика',
-      teacher: 'Иванов А.П.',
-      time: '9:00-10:30',
-      room: 'А-101',
-      type: 'lecture',
-      day: 1,
-      week: 1,  // Добавляем номер недели
-      timeSlot: 1
-    },
-    {
-      id: 2,
-      title: 'Программирование',
-      teacher: 'Петрова С.И.',
-      time: '10:45-12:15',
-      room: 'Б-205',
-      type: 'lab',
-      day: 1,
-      week: 1,  // Добавляем номер недели
-      timeSlot: 2
-    },];
+    lessons!: Lesson[];
     constructor(
         private _distservice: DistlearningService,
         private _router: Router,
     )
     {
+		
     }
     ngOnInit(): void {
-        console.log('dist learn load')
+        console.log('dist learn load');
+		this._distservice.getAllLessons()
+		.subscribe((data)=>{
+					
+					this.lessons=data;
+				}
+		);
     }
   
   // Дни недели
@@ -78,8 +65,8 @@ export class DistlearningComponent implements OnInit {
 
   // Получить урок для конкретной ячейки
     getLessonsForDayAndWeek(dayId: number, weekId: number): Lesson[] {
-        return this.lessons.filter(lesson => 
-            lesson.day === dayId && lesson.week === weekId
-            ).sort((a, b) => a.timeSlot - b.timeSlot); // Сортируем по времени
+        return this.lessons;//.filter(lesson => 
+        //     lesson.day === dayId && lesson.week === weekId
+        //     ).sort((a, b) => a.timeSlot - b.timeSlot); // Сортируем по времени
     }
 }

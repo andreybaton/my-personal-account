@@ -21,14 +21,22 @@ namespace Infrastructure.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Конвертер для DateTime (сохраняем только дату)
-            var dateConverter = new ValueConverter<DateTime, DateTime>(
-                v => v.Date,  // Сохраняем только дату
-                v => DateTime.SpecifyKind(v, DateTimeKind.Unspecified));
+            //var dateConverter = new ValueConverter<DateTime, DateTime>(
+            //    v => v.Date,  // Сохраняем только дату
+            //    v => DateTime.SpecifyKind(v, DateTimeKind.Unspecified));
 
             // Конвертер для TimeSpan (сохраняем как время)
-            var timeConverter = new ValueConverter<TimeSpan, TimeSpan>(
-                v => v,
-                v => v);
+            //var timeConverter = new ValueConverter<TimeSpan, TimeSpan>(
+            //    v => v,
+            //    v => v);
+            // Конвертеры для Npgsql 6.0.3
+            var dateOnlyConverter = new ValueConverter<DateOnly, DateTime>(
+                dateOnly => dateOnly.ToDateTime(TimeOnly.MinValue),
+                dateTime => DateOnly.FromDateTime(dateTime));
+
+            var timeOnlyConverter = new ValueConverter<TimeOnly, TimeSpan>(
+                timeOnly => timeOnly.ToTimeSpan(),
+                timeSpan => TimeOnly.FromTimeSpan(timeSpan));
 
             modelBuilder.Entity<Lesson>(entity =>
             {
@@ -55,23 +63,24 @@ namespace Infrastructure.Data
                     .HasMaxLength(255)
                     .IsRequired();
 
-                // DateTime -> date в PostgreSQL
+
+                // DateOnly с конвертером
                 entity.Property(e => e.LessonDate)
                     .HasColumnName("lesson_date")
-                    .HasConversion(dateConverter)
+                    .HasConversion(dateOnlyConverter)
                     .HasColumnType("date")
                     .IsRequired();
 
-                // TimeSpan -> time в PostgreSQL
+                // TimeOnly с конвертером
                 entity.Property(e => e.StartTime)
                     .HasColumnName("start_time")
-                    .HasConversion(timeConverter)
+                    .HasConversion(timeOnlyConverter)
                     .HasColumnType("time")
                     .IsRequired();
 
                 entity.Property(e => e.EndTime)
                     .HasColumnName("end_time")
-                    .HasConversion(timeConverter)
+                    .HasConversion(timeOnlyConverter)
                     .HasColumnType("time")
                     .IsRequired();
 

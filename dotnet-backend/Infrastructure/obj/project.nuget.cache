@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "sspIuGbUcE8=",
+  "dgSpecHash": "cFauQKAvyR8dpcUNUCDdTxedh+v/jdZtKCO+SSY3xAwK6bGqnOJv61t2Dwtu3kqkuhejdRVFk+ckJwVDDz5PTw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -26,18 +26,5 @@
     "C:\\Users\\Andrew\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\Andrew\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "message": "Package 'Npgsql' 6.0.3 has a known high severity vulnerability, https://github.com/advisories/GHSA-x9vc-6hfv-hg8c",
-      "projectPath": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Infrastructure\\Infrastructure.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Infrastructure\\Infrastructure.csproj",
-      "libraryId": "Npgsql",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  "logs": []
 }

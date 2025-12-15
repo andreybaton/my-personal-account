@@ -1,8 +1,11 @@
 import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
-import { Lesson } from './lesson-view.types';
-import { getDayOfWeekName } from './lesson-view.types';
+//import { Lesson } from './lesson-view.types';
+//import { getDayOfWeekName } from './lesson-view.types';
+import { DistlearningService } from '../distlearning.service';
+import { BehaviorSubject, filter, find, map, Subject } from 'rxjs';
+import { Lesson } from '../../../../shared/lesson.interface';
 
 @Component({
     selector: 'app-lesson-view',
@@ -12,36 +15,13 @@ import { getDayOfWeekName } from './lesson-view.types';
     styleUrl: './lesson-view.component.scss'
 })
 export class LessonViewComponent implements OnInit {
-    // @Input() lesson!: Lesson;
     lessonId: number | null = null;
-    lesson!: Lesson|undefined;
-    lessons: Lesson[] = [
-        {
-          id: 1,
-          title: 'Математика',
-          teacher: 'Иванов А.П.',
-          time: '9:00-10:30',
-          room: 'А-101',
-          type: 'lecture',
-          day: 1,
-          week: 1,  // Добавляем номер недели
-          timeSlot: 1
-        },
-        {
-          id: 2,
-          title: 'Программирование',
-          teacher: 'Петрова С.И.',
-          time: '10:45-12:15',
-          room: 'Б-205',
-          type: 'lab',
-          day: 1,
-          week: 1,  // Добавляем номер недели
-          timeSlot: 2
-        },];
-
+    
+	less = new Subject<Lesson>();
+	less$ = this.less.asObservable();
     constructor(
         private route: ActivatedRoute,
-        private router: Router
+  		private _distservice: DistlearningService
     ) 
     {
     }
@@ -50,17 +30,19 @@ export class LessonViewComponent implements OnInit {
         this.route.queryParams.subscribe(params => {
         this.lessonId = params['id'] ? Number(params['id']) : null;
         if(this.lessonId){
-            this.lesson = this.loadLesson(this.lessonId);
+        	this._distservice.getAllLessons()
+			.pipe(
+				map((lessons: Lesson[])=>lessons.find(les=>les.id==this.lessonId)))
+				.subscribe(
+				(data: Lesson | undefined) => {
+					if (data){
+						this.less.next(data);
+						
+					} else{}
+				}
+			)
         }
         });
     }
-    private loadLesson(lessonId: number): Lesson|undefined {
-        return this.lessons.find(lesson => 
-            lesson.id === lessonId)
-    }
-
-    // getDayOfWeek(): string {
-    //     return getDayOfWeekName(this.lesson.day);
-    // }
-    // Иконки для разных типов занятий
+    
 }

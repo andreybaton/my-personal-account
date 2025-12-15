@@ -1,4 +1,4 @@
-@if (lesson) {
+
 <div class="bg-white rounded-lg shadow-xl max-w-md w-full max-h-[90vh] overflow-y-auto">
     
     <!-- Заголовок -->
@@ -6,8 +6,8 @@
     <div class="flex items-center space-x-3">
         
         <div>
-        <h2 class="text-xl font-bold text-gray-900">{{ lesson.title }}</h2>
-        
+        <!-- <h2 class="text-xl font-bold text-gray-900">{{ lesson.title }}</h2>
+         -->
         </div>
     </div>
     </div>
@@ -24,19 +24,19 @@
     <!-- Преподаватель -->
     <div class="flex items-center justify-between">
         <span class="text-sm font-medium text-gray-700">Преподаватель:</span>
-        <span class="text-sm text-gray-900">{{ lesson.teacher }}</span>
+        <span class="text-sm text-gray-900">{{ (less$ | async)?.teacher}}</span>
     </div>
 
     
     <div class="flex items-center justify-between">
         <span class="text-sm font-medium text-gray-700">Время:</span>
-        <span class="text-sm text-gray-900">{{ lesson.time }}</span>
+        <!-- <span class="text-sm text-gray-900">{{ lesson.time }}</span> -->
     </div>
 
     
     <div class="flex items-center justify-between">
         <span class="text-sm font-medium text-gray-700">Аудитория:</span>
-        <span class="text-sm text-gray-900">{{ lesson.room }}</span>
+        <span class="text-sm text-gray-900">{{ (less$ | async)?.classroom }}</span>
     </div>
 
     
@@ -55,4 +55,4 @@
 
     </div>
 </div>
-}
+

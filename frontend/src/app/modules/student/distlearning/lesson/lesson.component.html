@@ -2,8 +2,8 @@
 class="lesson-card p-1 rounded border cursor-pointer transition-all duration-200 hover:shadow-sm mb-1 last:mb-0"
 [class]="colorClass"
 (click)="onLessonClick()">
-    <div class="text-xs font-semibold mb-1 truncate">{{ lesson.title }}</div>
+    <!-- <div class="text-xs font-semibold mb-1 truncate">{{ lesson.title }}</div> -->
     <div class="text-xs text-gray-600 truncate">{{ lesson.teacher }}</div>
-    <div class="text-xs text-gray-500">{{ lesson.room }}</div>
-    <div class="text-xs font-medium text-gray-700">{{ lesson.time }}</div>
+    <div class="text-xs text-gray-500">{{ lesson.classroom }}</div>
+    <div class="text-xs font-medium text-gray-700">{{ lesson.startTime}}</div>
 </div>
