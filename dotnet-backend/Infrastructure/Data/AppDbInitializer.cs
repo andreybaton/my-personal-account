@@ -41,7 +41,7 @@ namespace Infrastructure.Data
                     Discipline = "Программирование на C#",
                     LessonDate = new DateOnly(2024, 1, 15),
                     StartTime = new TimeOnly (9, 45),   // 10:45:00
-                    EndTime = new TimeOnly (9, 15),     // 12:15:00
+                    EndTime = new TimeOnly (11, 20),     // 12:15:00
                     LessonType = "practice"
                 },
                 new Lesson
@@ -50,8 +50,8 @@ namespace Infrastructure.Data
                     Classroom = "В-301",
                     Discipline = "Базы данных",
                     LessonDate = new DateOnly(2024, 1, 16),
-                    StartTime = new TimeOnly (9, 0),    // 13:00:00
-                    EndTime = new TimeOnly (9, 30),     // 14:30:00
+                    StartTime = new TimeOnly (11, 50),    // 13:00:00
+                    EndTime = new TimeOnly (13, 25),     // 14:30:00
                     LessonType = "lab"
                 },
                 new Lesson
@@ -60,8 +60,8 @@ namespace Infrastructure.Data
                     Classroom = "А-102",
                     Discipline = "Физика",
                     LessonDate = new DateOnly(2024, 1, 16),
-                    StartTime = new TimeOnly (9, 45),   // 14:45:00
-                    EndTime = new TimeOnly (9, 15),     // 16:15:00
+                    StartTime = new TimeOnly (13, 35),   // 14:45:00
+                    EndTime = new TimeOnly (15, 10),     // 16:15:00
                     LessonType = "lecture"
                 },
                 new Lesson
@@ -70,8 +70,8 @@ namespace Infrastructure.Data
                     Classroom = "Г-401",
                     Discipline = "Английский язык",
                     LessonDate = new DateOnly(2024, 1, 17),
-                    StartTime = new TimeOnly (9, 0),     // 09:00:00
-                    EndTime = new TimeOnly (9, 30),     // 10:30:00
+                    StartTime = new TimeOnly (15, 40),     // 09:00:00
+                    EndTime = new TimeOnly (17, 15),     // 10:30:00
                     LessonType = "practice"
                 }
             };

@@ -3,9 +3,10 @@ export interface Lesson {
     teacher: string;
     classroom: string;
 	//lesson: 'lecture' | 'practice' | 'lab';
+	discipline: string;
     lessonType: 'lecture' | 'practice' | 'lab';
     lessonDate: number;
 	startTime: string;
-    endTime: number;   
+    endTime: string;   
     //timeSlot:number;
 }

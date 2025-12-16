@@ -6,11 +6,12 @@ import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { DistlearningService } from '../distlearning.service';
 import { BehaviorSubject, filter, find, map, Subject } from 'rxjs';
 import { Lesson } from '../../../../shared/lesson.interface';
+import { LessontypeToRusPipe } from '../../../../shared/lessontype-to-rus-pipe';
 
 @Component({
     selector: 'app-lesson-view',
     standalone: true,
-    imports: [CommonModule],
+    imports: [CommonModule, LessontypeToRusPipe],
     templateUrl: './lesson-view.component.html',
     styleUrl: './lesson-view.component.scss'
 })
@@ -45,4 +46,8 @@ export class LessonViewComponent implements OnInit {
         });
     }
     
+	formatTime(time: string| undefined): string {
+    if (!time) return '';
+    return time.substring(0, 5); 
+	}
 }

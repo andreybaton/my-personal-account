@@ -102,8 +102,7 @@
               "RelativeToolTip": "WebAPI\\DTO\\LessonDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T19:52:23.104Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-15T19:52:23.104Z"
             },
             {
               "$type": "Document",
@@ -115,8 +114,7 @@
               "RelativeToolTip": "WebAPI\\Controllers\\LessonsController.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAQwEsAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T19:55:47.031Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-14T19:55:47.031Z"
             },
             {
               "$type": "Document",
@@ -128,8 +126,7 @@
               "RelativeToolTip": "Domain\\Entities\\Lesson.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T19:33:02.902Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-14T19:33:02.902Z"
             },
             {
               "$type": "Document",
@@ -141,8 +138,7 @@
               "RelativeToolTip": "WebAPI\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABpAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-14T16:30:21.64Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-14T16:30:21.64Z"
             },
             {
               "$type": "Document",
@@ -154,8 +150,7 @@
               "RelativeToolTip": "WebAPI\\Program.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAAAEEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T16:30:26.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-14T16:30:26.884Z"
             },
             {
               "$type": "Document",
@@ -165,7 +160,7 @@
               "RelativeDocumentMoniker": "Infrastructure\\Data\\AppDbInitializer.cs",
               "ToolTip": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Infrastructure\\Data\\AppDbInitializer.cs",
               "RelativeToolTip": "Infrastructure\\Data\\AppDbInitializer.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAuwEoAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAuwEkAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-14T20:29:00.1Z",
               "EditorCaption": ""
@@ -180,8 +175,7 @@
               "RelativeToolTip": "Infrastructure\\Data\\AppDbContext.cs",
               "ViewState": "AgIAADsAAAAAAAAAAAAwwFUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T19:51:09.273Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-14T19:51:09.273Z"
             },
             {
               "$type": "Document",
@@ -193,8 +187,7 @@
               "RelativeToolTip": "WebAPI\\Controllers\\WeatherForecastController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T19:21:09.305Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-14T19:21:09.305Z"
             },
             {
               "$type": "Document",
@@ -206,8 +199,7 @@
               "RelativeToolTip": "WebAPI\\WeatherForecast.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T16:30:29.916Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-14T16:30:29.916Z"
             },
             {
               "$type": "Document",
@@ -219,8 +211,7 @@
               "RelativeToolTip": "WebAPI\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-14T16:31:54.482Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-14T16:31:54.482Z"
             },
             {
               "$type": "Document",
@@ -232,8 +223,7 @@
               "RelativeToolTip": "Infrastructure\\Infrastructure.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-14T19:09:15.66Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-14T19:09:15.66Z"
             },
             {
               "$type": "Document",
@@ -245,8 +235,7 @@
               "RelativeToolTip": "WebAPI\\WebAPI.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-14T19:09:27.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-14T19:09:27.876Z"
             },
             {
               "$type": "Document",
@@ -258,8 +247,7 @@
               "RelativeToolTip": "Domain\\Domain.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-14T19:32:23.205Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-14T19:32:23.205Z"
             },
             {
               "$type": "Document",
@@ -271,8 +259,7 @@
               "RelativeToolTip": "Application\\Application.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-14T19:09:01.427Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-14T19:09:01.427Z"
             },
             {
               "$type": "Document",
