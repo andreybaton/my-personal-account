@@ -1,6 +1,8 @@
 using Application.Handlers.Queries;
+using Application.Interfaces;
 using Infrastructure.Data;
-using Infrastructure.Handlers;
+//using Infrastructure.Handlers;
+using Infrastructure.Repositories;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
@@ -29,8 +31,10 @@ builder.Services.AddCors(options =>
         });
 });
 
+builder.Services.AddScoped<ILessonRepository, LessonRepository>();
 builder.Services.AddMediatR(typeof(Application.Handlers.Queries.GetLessonsQuery).Assembly);
-builder.Services.AddScoped<ILessonQuery, LessonQuery>();
+builder.Services.AddAutoMapper(typeof(Application.Mappings.MappingProfile).Assembly);
+//builder.Services.AddScoped<ILessonQuery, LessonQuery>();
 
 var app = builder.Build();
 

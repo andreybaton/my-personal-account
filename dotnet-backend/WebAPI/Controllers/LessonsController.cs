@@ -1,10 +1,11 @@
 ﻿using Application.Handlers.Queries;
+using Application.Models;
 using Domain.Entities;
 using Infrastructure.Data;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using WebAPI.DTO;
+//using WebAPI.DTO;
 
 namespace WebAPI.Controllers
 {
@@ -30,18 +31,18 @@ namespace WebAPI.Controllers
                 var query = new GetLessonsQuery();
 
                 var lessons = await _mediator.Send(query);
-                var result = lessons.Select(lesson => new
-                {
-                    lesson.Id,
-                    lesson.Teacher,
-                    lesson.Classroom,
-                    lesson.Discipline,
-                    LessonDate = lesson.LessonDate.ToString("yyyy-MM-dd"),
-                    StartTime = lesson.StartTime.ToString("HH:mm:ss"),
-                    EndTime = lesson.EndTime.ToString("HH:mm:ss"),
-                    lesson.LessonType
-                }).ToList();
-                return Ok(result);
+                //var result = lessons.Select(lesson => new
+                //{
+                //    lesson.Id,
+                //    lesson.Teacher,
+                //    lesson.Classroom,
+                //    lesson.Discipline,
+                //    LessonDate = lesson.LessonDate.ToString("yyyy-MM-dd"),
+                //    StartTime = lesson.StartTime.ToString("HH:mm:ss"),
+                //    EndTime = lesson.EndTime.ToString("HH:mm:ss"),
+                //    lesson.LessonType
+                //}).ToList();
+                return Ok(lessons);
             }
             catch (Exception ex) { 
                 return StatusCode(500, $"Internal server error: {ex.Message}"); 

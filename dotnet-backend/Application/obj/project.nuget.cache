@@ -1,12 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "qWLl549Bd2I=",
+  "dgSpecHash": "ZG0ptfaiPtE=",
   "success": true,
   "projectFilePath": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Application\\Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Andrew\\.nuget\\packages\\linqkit.microsoft.entityframeworkcore\\6.0.27\\linqkit.microsoft.entityframeworkcore.6.0.27.nupkg.sha512",
+    "C:\\Users\\Andrew\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
+    "C:\\Users\\Andrew\\.nuget\\packages\\automapper.collection\\8.0.0\\automapper.collection.8.0.0.nupkg.sha512",
+    "C:\\Users\\Andrew\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\Andrew\\.nuget\\packages\\linqkit.core\\1.2.3\\linqkit.core.1.2.3.nupkg.sha512",
+    "C:\\Users\\Andrew\\.nuget\\packages\\linqkit.microsoft.entityframeworkcore\\6.1.3\\linqkit.microsoft.entityframeworkcore.6.1.3.nupkg.sha512",
     "C:\\Users\\Andrew\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\Andrew\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
+    "C:\\Users\\Andrew\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Andrew\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.1\\microsoft.entityframeworkcore.6.0.1.nupkg.sha512",
     "C:\\Users\\Andrew\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.1\\microsoft.entityframeworkcore.abstractions.6.0.1.nupkg.sha512",
     "C:\\Users\\Andrew\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.1\\microsoft.entityframeworkcore.analyzers.6.0.1.nupkg.sha512",
@@ -22,18 +27,5 @@
     "C:\\Users\\Andrew\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\Andrew\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "message": "Application depends on LinqKit.Microsoft.EntityFrameworkCore (>= 6.0.1) but LinqKit.Microsoft.EntityFrameworkCore 6.0.1 was not found. LinqKit.Microsoft.EntityFrameworkCore 6.0.27 was resolved instead.",
-      "projectPath": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Application\\Application.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Application\\Application.csproj",
-      "libraryId": "LinqKit.Microsoft.EntityFrameworkCore",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  "logs": []
 }

@@ -7,32 +7,20 @@
       "RelativeMoniker": "D:0:0:{638242CE-C962-489E-A4E7-53B9BE3C87EE}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\lessonscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{185E33DC-BAE4-4C8F-A37F-D8CAC1CF70E6}|Application\\Application.csproj|c:\\users\\andrew\\desktop\\lk\\dotnet-backend\\application\\application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{185E33DC-BAE4-4C8F-A37F-D8CAC1CF70E6}|Application\\Application.csproj|solutionrelative:application\\application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{185E33DC-BAE4-4C8F-A37F-D8CAC1CF70E6}|Application\\Application.csproj|c:\\users\\andrew\\desktop\\lk\\dotnet-backend\\application\\handlers\\queries\\getlessonsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{185E33DC-BAE4-4C8F-A37F-D8CAC1CF70E6}|Application\\Application.csproj|solutionrelative:application\\handlers\\queries\\getlessonsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{41E31621-9730-4020-9C2A-64F095855A9F}|Infrastructure\\Infrastructure.csproj|c:\\users\\andrew\\desktop\\lk\\dotnet-backend\\infrastructure\\handlers\\lessonqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41E31621-9730-4020-9C2A-64F095855A9F}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\handlers\\lessonqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41E31621-9730-4020-9C2A-64F095855A9F}|Infrastructure\\Infrastructure.csproj|c:\\users\\andrew\\desktop\\lk\\dotnet-backend\\infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{41E31621-9730-4020-9C2A-64F095855A9F}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{638242CE-C962-489E-A4E7-53B9BE3C87EE}|WebAPI\\WebAPI.csproj|c:\\users\\andrew\\desktop\\lk\\dotnet-backend\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{638242CE-C962-489E-A4E7-53B9BE3C87EE}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E040596B-F624-45B8-8435-256A47E9EBC3}|Domain\\Domain.csproj|c:\\users\\andrew\\desktop\\lk\\dotnet-backend\\domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{E040596B-F624-45B8-8435-256A47E9EBC3}|Domain\\Domain.csproj|solutionrelative:domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{185E33DC-BAE4-4C8F-A37F-D8CAC1CF70E6}|Application\\Application.csproj|c:\\users\\andrew\\desktop\\lk\\dotnet-backend\\application\\models\\lessondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{185E33DC-BAE4-4C8F-A37F-D8CAC1CF70E6}|Application\\Application.csproj|solutionrelative:application\\models\\lessondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E040596B-F624-45B8-8435-256A47E9EBC3}|Domain\\Domain.csproj|c:\\users\\andrew\\desktop\\lk\\dotnet-backend\\domain\\entities\\lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E040596B-F624-45B8-8435-256A47E9EBC3}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41E31621-9730-4020-9C2A-64F095855A9F}|Infrastructure\\Infrastructure.csproj|c:\\users\\andrew\\desktop\\lk\\dotnet-backend\\infrastructure\\repositories\\lessonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41E31621-9730-4020-9C2A-64F095855A9F}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\lessonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{41E31621-9730-4020-9C2A-64F095855A9F}|Infrastructure\\Infrastructure.csproj|c:\\users\\andrew\\desktop\\lk\\dotnet-backend\\infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,24 +31,44 @@
       "RelativeMoniker": "D:0:0:{41E31621-9730-4020-9C2A-64F095855A9F}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\appdbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{638242CE-C962-489E-A4E7-53B9BE3C87EE}|WebAPI\\WebAPI.csproj|c:\\users\\andrew\\desktop\\lk\\dotnet-backend\\webapi\\webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{638242CE-C962-489E-A4E7-53B9BE3C87EE}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{185E33DC-BAE4-4C8F-A37F-D8CAC1CF70E6}|Application\\Application.csproj|c:\\users\\andrew\\desktop\\lk\\dotnet-backend\\application\\interfaces\\ilessonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{185E33DC-BAE4-4C8F-A37F-D8CAC1CF70E6}|Application\\Application.csproj|solutionrelative:application\\interfaces\\ilessonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{638242CE-C962-489E-A4E7-53B9BE3C87EE}|WebAPI\\WebAPI.csproj|c:\\users\\andrew\\desktop\\lk\\dotnet-backend\\webapi\\dto\\lessondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{638242CE-C962-489E-A4E7-53B9BE3C87EE}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\dto\\lessondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{638242CE-C962-489E-A4E7-53B9BE3C87EE}|WebAPI\\WebAPI.csproj|c:\\users\\andrew\\desktop\\lk\\dotnet-backend\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{638242CE-C962-489E-A4E7-53B9BE3C87EE}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{185E33DC-BAE4-4C8F-A37F-D8CAC1CF70E6}|Application\\Application.csproj|c:\\users\\andrew\\desktop\\lk\\dotnet-backend\\application\\application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{185E33DC-BAE4-4C8F-A37F-D8CAC1CF70E6}|Application\\Application.csproj|solutionrelative:application\\application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{185E33DC-BAE4-4C8F-A37F-D8CAC1CF70E6}|Application\\Application.csproj|c:\\users\\andrew\\desktop\\lk\\dotnet-backend\\application\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{185E33DC-BAE4-4C8F-A37F-D8CAC1CF70E6}|Application\\Application.csproj|solutionrelative:application\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{638242CE-C962-489E-A4E7-53B9BE3C87EE}|WebAPI\\WebAPI.csproj|c:\\users\\andrew\\desktop\\lk\\dotnet-backend\\webapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{638242CE-C962-489E-A4E7-53B9BE3C87EE}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{638242CE-C962-489E-A4E7-53B9BE3C87EE}|WebAPI\\WebAPI.csproj|c:\\users\\andrew\\desktop\\lk\\dotnet-backend\\webapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{638242CE-C962-489E-A4E7-53B9BE3C87EE}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41E31621-9730-4020-9C2A-64F095855A9F}|Infrastructure\\Infrastructure.csproj|c:\\users\\andrew\\desktop\\lk\\dotnet-backend\\infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{41E31621-9730-4020-9C2A-64F095855A9F}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E040596B-F624-45B8-8435-256A47E9EBC3}|Domain\\Domain.csproj|c:\\users\\andrew\\desktop\\lk\\dotnet-backend\\domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E040596B-F624-45B8-8435-256A47E9EBC3}|Domain\\Domain.csproj|solutionrelative:domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{638242CE-C962-489E-A4E7-53B9BE3C87EE}|WebAPI\\WebAPI.csproj|c:\\users\\andrew\\desktop\\lk\\dotnet-backend\\webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{638242CE-C962-489E-A4E7-53B9BE3C87EE}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{638242CE-C962-489E-A4E7-53B9BE3C87EE}|WebAPI\\WebAPI.csproj|c:\\users\\andrew\\desktop\\lk\\dotnet-backend\\webapi\\webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{638242CE-C962-489E-A4E7-53B9BE3C87EE}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{638242CE-C962-489E-A4E7-53B9BE3C87EE}|WebAPI\\WebAPI.csproj|c:\\users\\andrew\\desktop\\lk\\dotnet-backend\\webapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{638242CE-C962-489E-A4E7-53B9BE3C87EE}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{638242CE-C962-489E-A4E7-53B9BE3C87EE}|WebAPI\\WebAPI.csproj|c:\\users\\andrew\\desktop\\lk\\dotnet-backend\\webapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,21 +86,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 13,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LessonQueryHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Infrastructure\\Handlers\\LessonQueryHandler.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Handlers\\LessonQueryHandler.cs",
-              "ToolTip": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Infrastructure\\Handlers\\LessonQueryHandler.cs",
-              "RelativeToolTip": "Infrastructure\\Handlers\\LessonQueryHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T19:33:29.755Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -115,124 +110,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GetLessonsQuery.cs",
-              "DocumentMoniker": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Application\\Handlers\\Queries\\GetLessonsQuery.cs",
-              "RelativeDocumentMoniker": "Application\\Handlers\\Queries\\GetLessonsQuery.cs",
-              "ToolTip": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Application\\Handlers\\Queries\\GetLessonsQuery.cs",
-              "RelativeToolTip": "Application\\Handlers\\Queries\\GetLessonsQuery.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACMAAAAkAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "ILessonRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Application\\Interfaces\\ILessonRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\ILessonRepository.cs",
+              "ToolTip": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Application\\Interfaces\\ILessonRepository.cs",
+              "RelativeToolTip": "Application\\Interfaces\\ILessonRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T17:03:22.836Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LessonsController.cs",
-              "DocumentMoniker": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\WebAPI\\Controllers\\LessonsController.cs",
-              "RelativeDocumentMoniker": "WebAPI\\Controllers\\LessonsController.cs",
-              "ToolTip": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\WebAPI\\Controllers\\LessonsController.cs",
-              "RelativeToolTip": "WebAPI\\Controllers\\LessonsController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwCsAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T19:55:47.031Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AppDbInitializer.cs",
-              "DocumentMoniker": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Infrastructure\\Data\\AppDbInitializer.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Data\\AppDbInitializer.cs",
-              "ToolTip": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Infrastructure\\Data\\AppDbInitializer.cs",
-              "RelativeToolTip": "Infrastructure\\Data\\AppDbInitializer.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAQwAoAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T20:29:00.1Z",
+              "WhenOpened": "2025-12-17T12:32:41.001Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Infrastructure.csproj",
-              "DocumentMoniker": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Infrastructure\\Infrastructure.csproj",
-              "RelativeDocumentMoniker": "Infrastructure\\Infrastructure.csproj",
-              "ToolTip": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Infrastructure\\Infrastructure.csproj",
-              "RelativeToolTip": "Infrastructure\\Infrastructure.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-14T19:09:15.66Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Domain.csproj",
-              "DocumentMoniker": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Domain\\Domain.csproj",
-              "RelativeDocumentMoniker": "Domain\\Domain.csproj",
-              "ToolTip": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Domain\\Domain.csproj",
-              "RelativeToolTip": "Domain\\Domain.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-14T19:32:23.205Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Application.csproj",
-              "DocumentMoniker": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Application\\Application.csproj",
-              "RelativeDocumentMoniker": "Application\\Application.csproj",
-              "ToolTip": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Application\\Application.csproj",
-              "RelativeToolTip": "Application\\Application.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-14T19:09:01.427Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\WebAPI\\Program.cs",
-              "RelativeDocumentMoniker": "WebAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\WebAPI\\Program.cs",
-              "RelativeToolTip": "WebAPI\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB8AAABbAAAAAAAAAA==",
+              "Title": "LessonRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Infrastructure\\Repositories\\LessonRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\LessonRepository.cs",
+              "ToolTip": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Infrastructure\\Repositories\\LessonRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\LessonRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T16:30:26.884Z",
+              "WhenOpened": "2025-12-16T19:33:29.755Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "WebAPI.csproj",
-              "DocumentMoniker": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\WebAPI\\WebAPI.csproj",
-              "RelativeDocumentMoniker": "WebAPI\\WebAPI.csproj",
-              "ToolTip": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\WebAPI\\WebAPI.csproj",
-              "RelativeToolTip": "WebAPI\\WebAPI.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-14T19:09:27.876Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "Lesson.cs",
               "DocumentMoniker": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Domain\\Entities\\Lesson.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Lesson.cs",
               "ToolTip": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Domain\\Entities\\Lesson.cs",
               "RelativeToolTip": "Domain\\Entities\\Lesson.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBEAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-14T19:33:02.902Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Infrastructure\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Data\\AppDbContext.cs",
@@ -245,7 +162,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 6,
+              "Title": "AppDbInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Infrastructure\\Data\\AppDbInitializer.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Data\\AppDbInitializer.cs",
+              "ToolTip": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Infrastructure\\Data\\AppDbInitializer.cs",
+              "RelativeToolTip": "Infrastructure\\Data\\AppDbInitializer.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwAoAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T20:29:00.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\WebAPI\\Program.cs",
+              "RelativeToolTip": "WebAPI\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAMAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T16:30:26.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LessonDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Application\\Models\\LessonDTO.cs",
+              "RelativeDocumentMoniker": "Application\\Models\\LessonDTO.cs",
+              "ToolTip": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Application\\Models\\LessonDTO.cs",
+              "RelativeToolTip": "Application\\Models\\LessonDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T13:06:11.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GetLessonsQuery.cs",
+              "DocumentMoniker": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Application\\Handlers\\Queries\\GetLessonsQuery.cs",
+              "RelativeDocumentMoniker": "Application\\Handlers\\Queries\\GetLessonsQuery.cs",
+              "ToolTip": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Application\\Handlers\\Queries\\GetLessonsQuery.cs",
+              "RelativeToolTip": "Application\\Handlers\\Queries\\GetLessonsQuery.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA8AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T17:03:22.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LessonsController.cs",
+              "DocumentMoniker": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\WebAPI\\Controllers\\LessonsController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\LessonsController.cs",
+              "ToolTip": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\WebAPI\\Controllers\\LessonsController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\LessonsController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T19:55:47.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Application.csproj",
+              "DocumentMoniker": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Application\\Application.csproj",
+              "RelativeDocumentMoniker": "Application\\Application.csproj",
+              "ToolTip": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Application\\Application.csproj",
+              "RelativeToolTip": "Application\\Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-14T19:09:01.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\WebAPI\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "WebAPI\\Properties\\launchSettings.json",
@@ -253,31 +248,47 @@
               "RelativeToolTip": "WebAPI\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-14T16:31:54.482Z"
+              "WhenOpened": "2025-12-14T16:31:54.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Infrastructure\\Infrastructure.csproj",
+              "RelativeDocumentMoniker": "Infrastructure\\Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Infrastructure\\Infrastructure.csproj",
+              "RelativeToolTip": "Infrastructure\\Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-14T19:09:15.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Application\\Mappings\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "Application\\Mappings\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Application\\Mappings\\MappingProfile.cs",
+              "RelativeToolTip": "Application\\Mappings\\MappingProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T12:39:27.231Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\WebAPI\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "WebAPI\\WeatherForecast.cs",
-              "ToolTip": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\WebAPI\\WeatherForecast.cs",
-              "RelativeToolTip": "WebAPI\\WeatherForecast.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T16:30:29.916Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\WebAPI\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "WebAPI\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\WebAPI\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "WebAPI\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T19:21:09.305Z"
+              "Title": "Domain.csproj",
+              "DocumentMoniker": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Domain\\Domain.csproj",
+              "RelativeDocumentMoniker": "Domain\\Domain.csproj",
+              "ToolTip": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Domain\\Domain.csproj",
+              "RelativeToolTip": "Domain\\Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-14T19:32:23.205Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -293,19 +304,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "LessonDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\WebAPI\\DTO\\LessonDTO.cs",
-              "RelativeDocumentMoniker": "WebAPI\\DTO\\LessonDTO.cs",
-              "ToolTip": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\WebAPI\\DTO\\LessonDTO.cs",
-              "RelativeToolTip": "WebAPI\\DTO\\LessonDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T19:52:23.104Z"
+              "DocumentIndex": 15,
+              "Title": "WebAPI.csproj",
+              "DocumentMoniker": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\WebAPI\\WebAPI.csproj",
+              "RelativeDocumentMoniker": "WebAPI\\WebAPI.csproj",
+              "ToolTip": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\WebAPI\\WebAPI.csproj",
+              "RelativeToolTip": "WebAPI\\WebAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-14T19:09:27.876Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\WebAPI\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "WebAPI\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\WebAPI\\WeatherForecast.cs",
+              "RelativeToolTip": "WebAPI\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T16:30:29.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\WebAPI\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\WebAPI\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T19:21:09.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\WebAPI\\appsettings.Development.json",
               "RelativeDocumentMoniker": "WebAPI\\appsettings.Development.json",
