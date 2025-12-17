@@ -6,6 +6,9 @@ C:\Users\Andrew\Desktop\lk\dotnet-backend\WebAPI\bin\Debug\net6.0\WebAPI.runtime
 C:\Users\Andrew\Desktop\lk\dotnet-backend\WebAPI\bin\Debug\net6.0\WebAPI.dll
 C:\Users\Andrew\Desktop\lk\dotnet-backend\WebAPI\bin\Debug\net6.0\ref\WebAPI.dll
 C:\Users\Andrew\Desktop\lk\dotnet-backend\WebAPI\bin\Debug\net6.0\WebAPI.pdb
+C:\Users\Andrew\Desktop\lk\dotnet-backend\WebAPI\bin\Debug\net6.0\LinqKit.Microsoft.EntityFrameworkCore.dll
+C:\Users\Andrew\Desktop\lk\dotnet-backend\WebAPI\bin\Debug\net6.0\MediatR.dll
+C:\Users\Andrew\Desktop\lk\dotnet-backend\WebAPI\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Andrew\Desktop\lk\dotnet-backend\WebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\Andrew\Desktop\lk\dotnet-backend\WebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\Andrew\Desktop\lk\dotnet-backend\WebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll

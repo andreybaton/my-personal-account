@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "gyjHsQrdIDrHnhq428sY3AnRaIkkAcZEHwVarSZF43ddJEJDYou3kYAYqQEAIQPM28yyAuQux+4dBK/7YPYpUA==",
+  "dgSpecHash": "OCPELL4UVVc=",
   "success": true,
   "projectFilePath": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Andrew\\.nuget\\packages\\linqkit.microsoft.entityframeworkcore\\6.0.27\\linqkit.microsoft.entityframeworkcore.6.0.27.nupkg.sha512",
+    "C:\\Users\\Andrew\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\Andrew\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\Andrew\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.1\\microsoft.entityframeworkcore.6.0.1.nupkg.sha512",
     "C:\\Users\\Andrew\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.1\\microsoft.entityframeworkcore.abstractions.6.0.1.nupkg.sha512",
     "C:\\Users\\Andrew\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.1\\microsoft.entityframeworkcore.analyzers.6.0.1.nupkg.sha512",
@@ -29,5 +32,18 @@
     "C:\\Users\\Andrew\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\Andrew\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "message": "Application depends on LinqKit.Microsoft.EntityFrameworkCore (>= 6.0.1) but LinqKit.Microsoft.EntityFrameworkCore 6.0.1 was not found. LinqKit.Microsoft.EntityFrameworkCore 6.0.27 was resolved instead.",
+      "projectPath": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\WebAPI\\WebAPI.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\WebAPI\\WebAPI.csproj",
+      "libraryId": "LinqKit.Microsoft.EntityFrameworkCore",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

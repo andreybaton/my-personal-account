@@ -1,16 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "cFauQKAvyR8dpcUNUCDdTxedh+v/jdZtKCO+SSY3xAwK6bGqnOJv61t2Dwtu3kqkuhejdRVFk+ckJwVDDz5PTw==",
+  "dgSpecHash": "SMaI1oLbdAQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Andrew\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Andrew\\.nuget\\packages\\linqkit.microsoft.entityframeworkcore\\6.0.27\\linqkit.microsoft.entityframeworkcore.6.0.27.nupkg.sha512",
+    "C:\\Users\\Andrew\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\Andrew\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\Andrew\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.1\\microsoft.entityframeworkcore.6.0.1.nupkg.sha512",
     "C:\\Users\\Andrew\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.1\\microsoft.entityframeworkcore.abstractions.6.0.1.nupkg.sha512",
     "C:\\Users\\Andrew\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.1\\microsoft.entityframeworkcore.analyzers.6.0.1.nupkg.sha512",
     "C:\\Users\\Andrew\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.1\\microsoft.entityframeworkcore.design.6.0.1.nupkg.sha512",
     "C:\\Users\\Andrew\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.1\\microsoft.entityframeworkcore.relational.6.0.1.nupkg.sha512",
-    "C:\\Users\\Andrew\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.1\\microsoft.entityframeworkcore.tools.6.0.1.nupkg.sha512",
     "C:\\Users\\Andrew\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Andrew\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.0\\microsoft.extensions.caching.memory.6.0.0.nupkg.sha512",
     "C:\\Users\\Andrew\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
@@ -26,5 +28,30 @@
     "C:\\Users\\Andrew\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\Andrew\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "message": "Application depends on LinqKit.Microsoft.EntityFrameworkCore (>= 6.0.1) but LinqKit.Microsoft.EntityFrameworkCore 6.0.1 was not found. LinqKit.Microsoft.EntityFrameworkCore 6.0.27 was resolved instead.",
+      "projectPath": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Infrastructure\\Infrastructure.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Infrastructure\\Infrastructure.csproj",
+      "libraryId": "LinqKit.Microsoft.EntityFrameworkCore",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'Npgsql' 6.0.3 has a known high severity vulnerability, https://github.com/advisories/GHSA-x9vc-6hfv-hg8c",
+      "projectPath": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Infrastructure\\Infrastructure.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Andrew\\Desktop\\lk\\dotnet-backend\\Infrastructure\\Infrastructure.csproj",
+      "libraryId": "Npgsql",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

@@ -1,5 +1,9 @@
+using Application.Handlers.Queries;
 using Infrastructure.Data;
+using Infrastructure.Handlers;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection;
 
 //AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 var builder = WebApplication.CreateBuilder(args);
@@ -24,6 +28,9 @@ builder.Services.AddCors(options =>
                    .AllowCredentials();
         });
 });
+
+builder.Services.AddMediatR(typeof(Application.Handlers.Queries.GetLessonsQuery).Assembly);
+builder.Services.AddScoped<ILessonQuery, LessonQuery>();
 
 var app = builder.Build();
 
