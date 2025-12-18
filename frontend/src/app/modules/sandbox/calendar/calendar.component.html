@@ -1,0 +1,16 @@
+<nz-calendar #calendarRef
+[nzDateCell]="lessonCell"
+[(ngModel)]="now" 
+(nzPanelChange)="panelChange($event)">
+
+</nz-calendar>
+
+<button (click)="prevMonth()">Предыдущий месяц</button>
+<button (click)="nextMonth()">Следующий месяц</button>
+
+<ng-template #lessonCell let-date>
+	<!-- <div>{{date}}</div> -->
+	@for (lesson of lessonsGroupByDay[date.toLocaleDateString('ru-RU')]; track lesson.id) {
+                        <app-lesson [lesson]="lesson"></app-lesson>
+                    }
+</ng-template>

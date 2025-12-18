@@ -37,7 +37,5 @@ public class GetLessonsHandler : IRequestHandler<GetLessonsQuery, List<LessonDto
         var lessons = await _lessonRepository.GetAllAsync(cancellationToken);
         return _mapper.Map<List<LessonDto>>(lessons);
     }
-
-
 }
 

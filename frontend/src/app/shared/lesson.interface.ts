@@ -5,7 +5,7 @@ export interface Lesson {
 	//lesson: 'lecture' | 'practice' | 'lab';
 	discipline: string;
     lessonType: 'lecture' | 'practice' | 'lab';
-    lessonDate: number;
+    lessonDate: string;
 	startTime: string;
     endTime: string;   
     //timeSlot:number;

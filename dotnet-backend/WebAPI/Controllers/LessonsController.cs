@@ -24,7 +24,7 @@ namespace WebAPI.Controllers
 
         // GET: api/lessons
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<LessonDto>>> GetLessons()
+        public async Task<ActionResult<List<LessonDto>>> GetLessons()
         {
 
             try {

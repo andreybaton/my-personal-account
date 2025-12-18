@@ -1,0 +1,8 @@
+<div 
+class="lesson-card p-1 rounded border cursor-pointer transition-all duration-200 hover:shadow-sm mb-1 last:mb-0"
+[class]="colorClass"
+(click)="onLessonClick()">
+    <span class="text-xs font-medium text-gray-800">{{ lesson.startTime}} - {{lesson.endTime}} </span>
+	<span class="text-xs text-gray-700">{{ lesson.classroom }}</span>
+    <div class="text-xs text-gray-600 truncate">{{ lesson.discipline }}</div>
+</div>

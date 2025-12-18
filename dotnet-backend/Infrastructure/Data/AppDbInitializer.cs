@@ -29,7 +29,7 @@ namespace Infrastructure.Data
                     Teacher = "Иванов Иван Иванович",
                     Classroom = "А-101",
                     Discipline = "Математический анализ",
-                    LessonDate = new DateOnly(2024, 1, 15), // Только дата
+                    LessonDate = new DateOnly(2025, 12, 15), // Только дата
                     StartTime = new TimeOnly(8,0),     // 09:00:00
                     EndTime = new TimeOnly(9,30),     // 10:30:00
                     LessonType = "lecture"
@@ -39,7 +39,7 @@ namespace Infrastructure.Data
                     Teacher = "Петров Петр Петрович",
                     Classroom = "Б-205",
                     Discipline = "Программирование на C#",
-                    LessonDate = new DateOnly(2024, 1, 15),
+                    LessonDate = new DateOnly(2025, 12, 15),
                     StartTime = new TimeOnly (9, 45),   // 10:45:00
                     EndTime = new TimeOnly (11, 20),     // 12:15:00
                     LessonType = "practice"
@@ -49,7 +49,7 @@ namespace Infrastructure.Data
                     Teacher = "Сидорова Светлана Сергеевна",
                     Classroom = "В-301",
                     Discipline = "Базы данных",
-                    LessonDate = new DateOnly(2024, 1, 16),
+                    LessonDate = new DateOnly(2025, 12, 16),
                     StartTime = new TimeOnly (11, 50),    // 13:00:00
                     EndTime = new TimeOnly (13, 25),     // 14:30:00
                     LessonType = "lab"
@@ -59,7 +59,7 @@ namespace Infrastructure.Data
                     Teacher = "Кузнецов Константин Александрович",
                     Classroom = "А-102",
                     Discipline = "Физика",
-                    LessonDate = new DateOnly(2024, 1, 16),
+                    LessonDate = new DateOnly(2025, 12, 16),
                     StartTime = new TimeOnly (13, 35),   // 14:45:00
                     EndTime = new TimeOnly (15, 10),     // 16:15:00
                     LessonType = "lecture"
@@ -69,7 +69,17 @@ namespace Infrastructure.Data
                     Teacher = "Васильева Виктория Олеговна",
                     Classroom = "Г-401",
                     Discipline = "Английский язык",
-                    LessonDate = new DateOnly(2024, 1, 17),
+                    LessonDate = new DateOnly(2025, 12, 17),
+                    StartTime = new TimeOnly (15, 40),     // 09:00:00
+                    EndTime = new TimeOnly (17, 15),     // 10:30:00
+                    LessonType = "practice"
+                },
+                 new Lesson
+                {
+                    Teacher = "Васильева Виктория Олеговна",
+                    Classroom = "Г-401",
+                    Discipline = "Английский язык",
+                    LessonDate = new DateOnly(2025, 11, 17),
                     StartTime = new TimeOnly (15, 40),     // 09:00:00
                     EndTime = new TimeOnly (17, 15),     // 10:30:00
                     LessonType = "practice"
