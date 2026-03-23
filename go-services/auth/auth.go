@@ -1,11 +1,9 @@
-package service
-
-import "auth/internal/repository"
+package auth
 
 type AuthService struct {
-	userRepo *repository.UserRepository
+	userRepo *UserRepository
 }
 
-func NewAuthService(userRepo *repository.UserRepository) *AuthService {
+func NewAuthService(userRepo *UserRepository) *AuthService {
 	return &AuthService{userRepo: userRepo}
 }
