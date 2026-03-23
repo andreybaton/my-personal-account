@@ -1,0 +1,1102 @@
+basePath: /api/v1
+definitions:
+  dto.AttendanceResponse:
+    properties:
+      date:
+        type: string
+      discipline:
+        type: string
+      lesson_id:
+        type: integer
+      recorded_at:
+        type: string
+      start_time:
+        type: string
+      status:
+        type: string
+      teacher:
+        type: string
+    type: object
+  dto.AttendanceStatsResponse:
+    properties:
+      absent:
+        type: integer
+      attendance_rate:
+        type: number
+      attended:
+        type: integer
+      late:
+        type: integer
+      period_end:
+        type: string
+      period_start:
+        type: string
+      student_id:
+        type: integer
+      total_lessons:
+        type: integer
+    type: object
+  dto.CreateLessonRequest:
+    properties:
+      classroom_id:
+        type: integer
+      discipline_id:
+        type: integer
+      end_time:
+        type: string
+      group_ids:
+        description: для нескольких групп
+        items:
+          type: integer
+        minItems: 1
+        type: array
+      lesson_date:
+        type: string
+      start_time:
+        type: string
+      teacher_id:
+        type: integer
+      type:
+        enum:
+        - lecture
+        - practice
+        - lab
+        - seminar
+        type: string
+    required:
+    - classroom_id
+    - discipline_id
+    - end_time
+    - group_ids
+    - lesson_date
+    - start_time
+    - teacher_id
+    - type
+    type: object
+  dto.DayScheduleResponse:
+    properties:
+      date:
+        type: string
+      day_name:
+        type: string
+      lessons:
+        items:
+          $ref: '#/definitions/dto.LessonResponse'
+        type: array
+    type: object
+  dto.ErrorResponse:
+    properties:
+      error:
+        example: Error message
+        type: string
+    type: object
+  dto.GradeResponse:
+    properties:
+      created_at:
+        type: string
+      discipline:
+        type: string
+      discipline_id:
+        type: integer
+      grade_type:
+        type: string
+      grade_value:
+        type: number
+      id:
+        type: integer
+      semester:
+        type: string
+    type: object
+  dto.GroupAttendanceSummary:
+    properties:
+      attendance_rate:
+        type: number
+      attended:
+        type: integer
+      student_id:
+        type: integer
+      student_name:
+        type: string
+      total_lessons:
+        type: integer
+    type: object
+  dto.GroupDetailsResponse:
+    properties:
+      admission_year:
+        type: integer
+      faculty:
+        type: string
+      id:
+        type: integer
+      name:
+        type: string
+      specialization:
+        type: string
+      student_count:
+        type: integer
+      students:
+        items:
+          $ref: '#/definitions/dto.GroupStudentResponse'
+        type: array
+    type: object
+  dto.GroupResponse:
+    properties:
+      admission_year:
+        type: integer
+      faculty:
+        type: string
+      id:
+        type: integer
+      name:
+        type: string
+      specialization:
+        type: string
+      student_count:
+        type: integer
+    type: object
+  dto.GroupStudentResponse:
+    properties:
+      email:
+        type: string
+      id:
+        type: integer
+      name:
+        type: string
+      student_id_number:
+        type: string
+    type: object
+  dto.LessonAttendanceResponse:
+    properties:
+      attendance:
+        items:
+          $ref: '#/definitions/dto.StudentAttendanceDetail'
+        type: array
+      date:
+        type: string
+      discipline:
+        type: string
+      lesson_id:
+        type: integer
+    type: object
+  dto.LessonResponse:
+    properties:
+      address:
+        type: string
+      building:
+        type: string
+      classroom:
+        type: string
+      date:
+        type: string
+      discipline:
+        type: string
+      end_time:
+        type: string
+      id:
+        type: integer
+      start_time:
+        type: string
+      teacher:
+        type: string
+      teacher_degree:
+        type: string
+      type:
+        type: string
+    type: object
+  dto.MarkAttendanceRequest:
+    properties:
+      lesson_id:
+        type: integer
+      status:
+        enum:
+        - present
+        - absent
+        - late
+        type: string
+      student_id:
+        type: integer
+    required:
+    - lesson_id
+    - status
+    - student_id
+    type: object
+  dto.StudentAcademicResponse:
+    properties:
+      average_grade:
+        type: number
+      completed_credits:
+        type: integer
+      current_semester:
+        type: string
+      grades:
+        items:
+          $ref: '#/definitions/dto.GradeResponse'
+        type: array
+      student_id:
+        type: integer
+      total_disciplines:
+        type: integer
+    type: object
+  dto.StudentAttendanceDetail:
+    properties:
+      recorded_at:
+        type: string
+      status:
+        type: string
+      student_id:
+        type: integer
+      student_id_number:
+        type: string
+      student_name:
+        type: string
+    type: object
+  dto.StudentProfileResponse:
+    properties:
+      admission_year:
+        type: integer
+      email:
+        type: string
+      faculty_id:
+        type: integer
+      faculty_name:
+        type: string
+      group_id:
+        type: integer
+      group_name:
+        type: string
+      id:
+        type: integer
+      name:
+        type: string
+      specialization:
+        type: string
+      student_id_number:
+        type: string
+      user_id:
+        type: integer
+    type: object
+  dto.SuccessResponse:
+    properties:
+      message:
+        example: Operation completed successfully
+        type: string
+    type: object
+  dto.WeeklyScheduleResponse:
+    properties:
+      days:
+        items:
+          $ref: '#/definitions/dto.DayScheduleResponse'
+        type: array
+      end_date:
+        type: string
+      start_date:
+        type: string
+      week_number:
+        type: integer
+    type: object
+host: localhost:8080
+info:
+  contact:
+    email: support@swagger.io
+    name: API Support
+    url: http://www.swagger.io/support
+  description: API для системы расписания студентов
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+  termsOfService: http://swagger.io/terms/
+  title: Student Schedule API
+  version: "1.0"
+paths:
+  /attendance/groups/{id}/summary:
+    get:
+      consumes:
+      - application/json
+      description: Возвращает сводку посещаемости всех студентов группы за период
+      parameters:
+      - description: ID группы
+        example: 1
+        in: path
+        name: id
+        required: true
+        type: integer
+      - description: 'Начальная дата (формат: 2006-01-02)'
+        example: '"2024-01-01"'
+        in: query
+        name: start_date
+        type: string
+      - description: 'Конечная дата (формат: 2006-01-02)'
+        example: '"2024-01-31"'
+        in: query
+        name: end_date
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/dto.GroupAttendanceSummary'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+      summary: Получить сводку посещаемости по группе
+      tags:
+      - attendance
+  /attendance/lessons/{id}:
+    get:
+      consumes:
+      - application/json
+      description: Возвращает посещаемость конкретного занятия
+      parameters:
+      - description: ID занятия
+        example: 1
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/dto.LessonAttendanceResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+      summary: Получить посещаемость занятия
+      tags:
+      - attendance
+  /attendance/mark:
+    post:
+      consumes:
+      - application/json
+      description: Отмечает посещение студента на занятии
+      parameters:
+      - description: Данные посещения
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/dto.MarkAttendanceRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/dto.SuccessResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+      summary: Отметить посещение
+      tags:
+      - attendance
+  /attendance/mark-batch:
+    post:
+      consumes:
+      - application/json
+      description: Отмечает посещение для нескольких студентов на занятии
+      parameters:
+      - description: Данные посещений
+        in: body
+        name: request
+        required: true
+        schema:
+          items:
+            $ref: '#/definitions/dto.MarkAttendanceRequest'
+          type: array
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/dto.SuccessResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+      summary: Отметить посещение для нескольких студентов
+      tags:
+      - attendance
+  /attendance/students/{id}:
+    get:
+      consumes:
+      - application/json
+      description: Возвращает посещаемость студента за указанный период
+      parameters:
+      - description: ID студента
+        example: 1
+        in: path
+        name: id
+        required: true
+        type: integer
+      - description: 'Начальная дата (формат: 2006-01-02)'
+        example: '"2024-01-01"'
+        in: query
+        name: start_date
+        type: string
+      - description: 'Конечная дата (формат: 2006-01-02)'
+        example: '"2024-01-31"'
+        in: query
+        name: end_date
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/dto.AttendanceResponse'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+      summary: Получить посещаемость студента
+      tags:
+      - attendance
+  /attendance/students/{id}/stats:
+    get:
+      consumes:
+      - application/json
+      description: Возвращает статистику посещаемости студента за период
+      parameters:
+      - description: ID студента
+        example: 1
+        in: path
+        name: id
+        required: true
+        type: integer
+      - default: week
+        description: Период (week, month, semester)
+        enum:
+        - week
+        - month
+        - semester
+        in: query
+        name: period
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/dto.AttendanceStatsResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+      summary: Получить статистику посещаемости
+      tags:
+      - attendance
+  /groups:
+    get:
+      consumes:
+      - application/json
+      description: Возвращает список всех групп
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/dto.GroupResponse'
+            type: array
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+      summary: Получить все группы
+      tags:
+      - groups
+  /groups/{id}:
+    get:
+      consumes:
+      - application/json
+      description: Возвращает детальную информацию о группе включая студентов
+      parameters:
+      - description: ID группы
+        example: 1
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/dto.GroupDetailsResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+      summary: Получить детали группы
+      tags:
+      - groups
+  /groups/faculty/{faculty_id}:
+    get:
+      consumes:
+      - application/json
+      description: Возвращает список групп по ID факультета
+      parameters:
+      - description: ID факультета
+        example: 1
+        in: path
+        name: faculty_id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/dto.GroupResponse'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+      summary: Получить группы по факультету
+      tags:
+      - groups
+  /schedule/classrooms/{id}:
+    get:
+      consumes:
+      - application/json
+      description: Возвращает расписание аудитории на указанный период
+      parameters:
+      - description: ID аудитории
+        example: 1
+        in: path
+        name: id
+        required: true
+        type: integer
+      - description: 'Начальная дата (формат: 2006-01-02)'
+        example: '"2024-01-01"'
+        in: query
+        name: start_date
+        type: string
+      - description: 'Конечная дата (формат: 2006-01-02)'
+        example: '"2024-01-31"'
+        in: query
+        name: end_date
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/dto.LessonResponse'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+      summary: Получить расписание аудитории
+      tags:
+      - schedule
+  /schedule/groups/{id}:
+    get:
+      consumes:
+      - application/json
+      description: Возвращает расписание группы на указанный период
+      parameters:
+      - description: ID группы
+        example: 1
+        in: path
+        name: id
+        required: true
+        type: integer
+      - description: 'Начальная дата (формат: 2006-01-02)'
+        example: '"2024-01-01"'
+        in: query
+        name: start_date
+        type: string
+      - description: 'Конечная дата (формат: 2006-01-02)'
+        example: '"2024-01-31"'
+        in: query
+        name: end_date
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/dto.LessonResponse'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+      summary: Получить расписание группы
+      tags:
+      - schedule
+  /schedule/lessons:
+    post:
+      consumes:
+      - application/json
+      description: Создает новое занятие в расписании
+      parameters:
+      - description: Данные для создания занятия
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/dto.CreateLessonRequest'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/dto.SuccessResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+      summary: Создать занятие
+      tags:
+      - schedule
+  /schedule/lessons/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Удаляет занятие из расписания
+      parameters:
+      - description: ID занятия
+        example: 1
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/dto.SuccessResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+      summary: Удалить занятие
+      tags:
+      - schedule
+    get:
+      consumes:
+      - application/json
+      description: Возвращает детальную информацию о занятии
+      parameters:
+      - description: ID занятия
+        example: 1
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/dto.LessonResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+      summary: Получить детали занятия
+      tags:
+      - schedule
+    put:
+      consumes:
+      - application/json
+      description: Обновляет существующее занятие в расписании
+      parameters:
+      - description: ID занятия
+        example: 1
+        in: path
+        name: id
+        required: true
+        type: integer
+      - description: Данные для обновления занятия
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/dto.CreateLessonRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/dto.SuccessResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+      summary: Обновить занятие
+      tags:
+      - schedule
+  /schedule/students/{id}:
+    get:
+      consumes:
+      - application/json
+      description: Возвращает расписание студента на указанный период
+      parameters:
+      - description: ID студента
+        example: 1
+        in: path
+        name: id
+        required: true
+        type: integer
+      - description: 'Начальная дата (формат: 2006-01-02)'
+        example: '"2024-01-01"'
+        in: query
+        name: start_date
+        type: string
+      - description: 'Конечная дата (формат: 2006-01-02)'
+        example: '"2024-01-31"'
+        in: query
+        name: end_date
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/dto.LessonResponse'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+      summary: Получить расписание студента
+      tags:
+      - schedule
+  /schedule/students/{id}/daily:
+    get:
+      consumes:
+      - application/json
+      description: Возвращает расписание студента на указанный день
+      parameters:
+      - description: ID студента
+        example: 1
+        in: path
+        name: id
+        required: true
+        type: integer
+      - description: 'Дата (формат: 2006-01-02)'
+        example: '"2024-01-01"'
+        in: query
+        name: date
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/dto.DayScheduleResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+      summary: Получить дневное расписание студента
+      tags:
+      - schedule
+  /schedule/students/{id}/weekly:
+    get:
+      consumes:
+      - application/json
+      description: Возвращает расписание студента на указанную неделю
+      parameters:
+      - description: ID студента
+        example: 1
+        in: path
+        name: id
+        required: true
+        type: integer
+      - description: 'Начало недели (формат: 2006-01-02)'
+        example: '"2024-01-01"'
+        in: query
+        name: week_start
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/dto.WeeklyScheduleResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+      summary: Получить недельное расписание студента
+      tags:
+      - schedule
+  /schedule/teachers/{id}:
+    get:
+      consumes:
+      - application/json
+      description: Возвращает расписание преподавателя на указанный период
+      parameters:
+      - description: ID преподавателя
+        example: 1
+        in: path
+        name: id
+        required: true
+        type: integer
+      - description: 'Начальная дата (формат: 2006-01-02)'
+        example: '"2024-01-01"'
+        in: query
+        name: start_date
+        type: string
+      - description: 'Конечная дата (формат: 2006-01-02)'
+        example: '"2024-01-31"'
+        in: query
+        name: end_date
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/dto.LessonResponse'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+      summary: Получить расписание преподавателя
+      tags:
+      - schedule
+  /students/{id}/academic:
+    get:
+      consumes:
+      - application/json
+      description: Возвращает академическую информацию о студенте (оценки, посещаемость
+        и т.д.)
+      parameters:
+      - description: ID студента
+        example: 1
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/dto.StudentAcademicResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+      summary: Получить академическую информацию
+      tags:
+      - students
+  /students/{id}/profile:
+    get:
+      consumes:
+      - application/json
+      description: Возвращает профиль студента с основной информацией
+      parameters:
+      - description: ID студента
+        example: 1
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/dto.StudentProfileResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/dto.ErrorResponse'
+      summary: Получить профиль студента
+      tags:
+      - students
+schemes:
+- http
+swagger: "2.0"
