@@ -1,0 +1,135 @@
+services:
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: lessonsdb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ubuntu2!
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U postgres" ]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - university-network
+
+  rabbitmq:
+    image: rabbitmq:4-management
+    container_name: university-rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+    healthcheck:
+      test: [ "CMD", "rabbitmq-diagnostics", "ping" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - university-network
+
+  dotnet:
+    build: ./dotnet-backend
+    depends_on:
+      postgres:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    environment:
+      ConnectionStrings__DefaultConnection: "Host=postgres;Port=5432;Database=lessonsdb;Username=postgres;Password=ubuntu2!"
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: "http+:80"
+      RabbitMQ__Host: rabbitmq
+      RabbitMQ__Port: 5672
+      RabbitMQ__Username: guest
+      RabbitMQ__Password: guest
+    networks:
+      - university-network
+
+  auth-service:
+    build:
+      context: ./go-services/auth
+      dockerfile: Dockerfile
+    container_name: university-auth
+    ports:
+      - "8081:8080"
+    environment:
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_USER: postgres
+      DB_PASSWORD: ubuntu2!
+      DB_NAME: lessonsdb
+
+      JWT_SECRET: i-nikomu-nichego-ne-skaju
+      JWT_EXPIRATION_HOURS: 24
+
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+
+      RABBITMQ_HOST: rabbitmq
+      RABBITMQ_PORT: 5672
+      RABBITMQ_USER: guest
+      RABBITMQ_PASSWORD: guest
+
+      PORT: 8080
+
+      ENVIRONMENT: development
+    depends_on:
+      postgres:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - university-network
+    volumes:
+      - ./go-services/auth:/app
+
+  redis:
+    image: redis:7-alpine
+    container_name: university-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: [ "CMD", "redis-cli", "ping" ]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    networks:
+      - university-network
+
+  nginx:
+    image: nginx:alpine
+    container_name: university-nginx
+    ports:
+      - "443:443"
+      - "8080:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/conf.d:/etc/nginx/conf.d:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - dotnet
+      - auth-service
+    networks:
+      - university-network
+
+networks:
+  university-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+  rabbitmq_data:
+  redis_data:
